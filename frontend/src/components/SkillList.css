@@ -1,0 +1,78 @@
+.skill-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-list--empty {
+  background: #fff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  color: #64748b;
+}
+
+.skill-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.skill-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.skill-card__header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.skill-card__category {
+  margin: 0.5rem 0 0;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.skill-card__description {
+  margin: 0.75rem 0 0;
+  color: #334155;
+}
+
+.skill-card__actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.badge {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge--beginner {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge--intermediate {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.badge--advanced {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.badge--expert {
+  background: #ede9fe;
+  color: #6d28d9;
+}

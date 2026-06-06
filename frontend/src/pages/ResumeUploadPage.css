@@ -1,0 +1,474 @@
+.resume-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.resume-page__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.resume-page__nav a {
+  color: #4f46e5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.upload-card,
+.resume-list-section {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.upload-card h2,
+.resume-list-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.file-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.file-meta {
+  margin: 0;
+  color: #475569;
+}
+
+.resume-card {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.resume-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.resume-card__header h3 {
+  margin: 0;
+}
+
+.resume-card__meta {
+  margin: 0.35rem 0 0.75rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.resume-card__text {
+  margin: 0;
+  padding: 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: inherit;
+  font-size: 0.9rem;
+  max-height: 280px;
+  overflow: auto;
+}
+
+.alert--success {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+/* AI Resume Analysis Styling */
+.analysis-results {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+}
+
+.analysis-header {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.analysis-header h4 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .analysis-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.analysis-card {
+  padding: 1.25rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.analysis-card h5 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.analysis-card ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.analysis-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.analysis-card li:last-child {
+  margin-bottom: 0;
+}
+
+.analysis-card--strengths {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #14532d;
+}
+
+.analysis-card--strengths h5 {
+  color: #166534;
+}
+
+.analysis-card--weaknesses {
+  background: #fff7ed;
+  border: 1px solid #ffedd5;
+  color: #7c2d12;
+}
+
+.analysis-card--weaknesses h5 {
+  color: #9a3412;
+}
+
+.analysis-section {
+  margin-bottom: 1.5rem;
+}
+
+.analysis-section h5 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  padding: 0.35rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge--skill {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+}
+
+.badge--career {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1e40af;
+}
+
+.analysis-actions {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.analysis-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  margin: 1.25rem 0;
+}
+
+.cta-text {
+  margin: 0;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+.raw-text-details {
+  margin-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+}
+
+.raw-text-details summary {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: color 0.2s;
+}
+
+.raw-text-details summary:hover {
+  color: #4f46e5;
+}
+
+.raw-text-details[open] summary {
+  margin-bottom: 0.75rem;
+}
+
+.resume-card__title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.file-size-badge {
+  font-size: 0.8rem;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.status-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+}
+
+.status-badge--analyzed {
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.resume-card__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.analysis-report-details {
+  margin-top: 1rem;
+  background: #fafafb;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.analysis-report-details summary {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4f46e5;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+
+.analysis-report-details[open] summary {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.btn--sm {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+/* Job Alignment Section */
+.job-alignment-section {
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.toggle-alignment-btn {
+  background: none;
+  border: none;
+  color: #4f46e5;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.2s ease;
+}
+
+.toggle-alignment-btn:hover {
+  color: #3730a3;
+  text-decoration: underline;
+}
+
+.job-alignment-form {
+  margin-top: 0.75rem;
+  padding: 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: slideDown 0.25s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.job-alignment-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.job-alignment-form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.alignment-input,
+.alignment-textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.2s ease;
+  background: #ffffff;
+}
+
+.alignment-input:focus,
+.alignment-textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Targeted Report Banner */
+.targeted-analysis-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(30, 41, 59, 0.02);
+}
+
+.banner-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-top: 0.1rem;
+}
+
+.banner-content h4 {
+  margin: 0 0 0.35rem 0;
+  color: #1e3a8a;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.banner-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.4;
+}
+
+.banner-jd-details {
+  margin-top: 0.5rem;
+}
+
+.banner-jd-details summary {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #2563eb;
+  cursor: pointer;
+  user-select: none;
+}
+
+.banner-jd-details summary:hover {
+  text-decoration: underline;
+}
+
+.banner-jd-text {
+  margin: 0.5rem 0 0 0;
+  padding: 0.75rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #475569;
+  white-space: pre-wrap;
+  max-height: 150px;
+  overflow-y: auto;
+  font-family: inherit;
+}
+
+
